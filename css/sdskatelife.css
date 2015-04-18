@@ -1,0 +1,303 @@
+body {
+    margin: 0 auto;
+    overflow: scroll;
+    color: #3D251D; /*  brick brown */
+    background-image: url(../images/sdsl/sdslbricks.jpg);
+}
+
+@font-face {
+    font-family: 'sdskatelife';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#zingtu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#maindiv {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 1020px;
+    height: 1008px;
+    color: #3D251D; /* brick brown */
+}
+#topnav {
+    position: relative;
+    top: 40px;
+    left: 120px;
+    /*height: 30px;*/
+    line-height: 30px;
+    vertical-align: middle;
+    z-index: 3;
+    /*background-color: red;*/
+}
+#whitebox {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    width: 930px;
+    height: 700px;
+    top: -280px;
+    z-index: 0;
+    border-radius: 4px 4px 0 0;
+}
+#topbox {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 848px;
+    height: 389px;
+    top: 21px;
+    background-image: url(../images/sdsl/sdsltopbox.png);
+    z-index: 2;
+}
+#toplogobox {
+    position: absolute;
+    width: 238px;
+    height: 95px;
+    top: 50px;
+    left: 55px;
+    background-image: url(../images/sdsl/sdsl-logo.png);
+}
+.titletext {
+    /*height: 100%;*/
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 25%;
+    height: auto;
+}
+.titletextdiv {
+    position: relative;
+    height: auto;
+}
+#topslogan {
+    position: absolute;
+    width: 220px;
+    /*height: 77px;*/
+    /*top: 220px;*/
+    top: 145px;
+    height: 190px;
+    /*background-color: #efefef;*/
+    
+    left: 55px;
+    font-family: Tahoma;
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    color: #5c8727;
+}
+#topslidebox {
+    position: absolute;
+    width: 490px;
+    height: 303px;
+    top: 42px;
+    left: 318px;
+    /*background: black;*/
+    background-image: url(../images/sdsl/sdslbricks.jpg);
+    -webkit-border-top-right-radius: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    border-top-right-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.navbtn {
+    font-family: Tahoma;
+    font-size: .9em;
+    color: #ffffff;
+    margin-right: 40px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbtn:hover {
+    text-decoration: none;
+    color: #5c8727;
+    cursor: pointer;
+}
+.navactivebtn {
+    background-color: #b1953a;
+    -webkit-border-top-right-radius: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    border-top-rightt-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+#footerbox {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #A1842D;
+    height: 140px;
+    width: 930px;
+    top: -276px;
+    z-index: 0;
+}
+#footerlogo {
+    position: relative;
+    float: left;
+    width: 55px;
+    height: 67px;
+    top: 40px;
+    left: 30px;
+    background-image: url(../images/sdsl/sdslfooterlogo.png);
+}
+#footerinfo {
+    position: relative;
+    float: left;
+    width: 900px;
+    height: 100px;
+    top: -30px;
+    left: 130px;
+    font-family: Tahoma;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+}
+#leftnav {
+    position: relative;
+    width: 214px;
+    height: 360px;
+    /*background-color: blue;*/
+    top: 304px;
+    left: 40px;
+}
+.lnavbtn {
+    height: 53px;
+    width: 214px;
+    font-family: Tahoma;
+    font-size: 1em;
+    font-weight: bold;
+    color: #5c8727;
+    margin-top: 15px;
+    background-image: url(../images/sdsl/sdslbuttonnative.png) ;
+}
+.lnavbtn:hover {
+    background-image: url(../images/sdsl/sdslbuttonhover.png) ;
+    color: #3D251D; /* brick brown */
+    cursor: pointer;
+    /*height: 40px;*/
+}
+.lnavactivebtn {
+    background-image: url(../images/sdsl/sdslbuttonhover.png) ;
+    color: #3D251D; /* brick brown */
+}
+#followdiv {
+    position: relative;
+    height: 67px;
+    width: 130px;
+    top: -506px;
+    left: 270px;
+    background-image: url(../images/sdsl/sdslfollowus.png) ;
+    z-index: 1;
+}
+#followlinks {
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 180px;
+    top: -512px;
+    left: 100px;
+    z-index: 1;
+}
+.followimgs {
+    float: left;
+    margin-right: 10px;
+}
+.sdsl {
+    text-decoration: none;
+    color: #ffffff;
+}
+.sdsl:hover {
+    text-decoration: none;
+    color: #5c8727;
+}
+.viewerimage {
+    height: 303px;
+    -webkit-border-top-right-radius: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+    border-top-right-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+#maincontentdiv{
+    position: relative;
+    height: 390px;
+    width: 530px;
+    top: -70px;
+    left: 370px;
+    background: #ffffff;
+    text-align: left;
+    overflow:auto;
+    z-index: 1;
+}
+.leftcol {
+    font-family: Tahoma;
+    float: left;
+    width: 44%;
+    padding: 10px;
+}
+.hometitle {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    color: #5c8727;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.indented {
+    margin-left: 25px;
+    text-align: left;
+    font-family: Tahoma;
+    font-size: 1em;
+    /*margin-bottom: 10px;*/
+}
+.sectiontitle {
+    text-align: left;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contentbody {
+    font-family: Tahoma;
+    margin-bottom: 10px;
+}
+.classlink {
+    font-family: Tahoma, Century Gothic;
+    color: #3D251D;
+    margin-left: 12px;
+    height: 55px;
+    line-height: 55px;
+    vertical-align: middle;
+    position: relative;
+    top: -24px;
+}
+
+.classes {
+	text-align: center;
+	margin-bottom: 14px;
+ 	font-family: sdskatelife, Cooper Black, Tahoma;
+}
+.classes h2 {
+	color: #3D251D;
+	font-size: 1.5em;
+}
+.classes span {
+    color: #5c8727; // green
+}
+.classes link {
+	text-decoration: none;
+}
+.classes link:hover {
+	text-decoration: underline;
+}
+
+
+
