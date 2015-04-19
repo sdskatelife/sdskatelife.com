@@ -289,7 +289,7 @@ body {
 	color: #3D251D;
 	font-size: 1.5em;
 }
-.classes span {
+.classes .highlight {
     color: #5c8727; // green
 }
 .classes link {
@@ -301,6 +301,11 @@ body {
 .classes.title {
     font-size: 16px;
     font-weight: bold;
+}
+
+a.mapIt {
+    color: #5c8727;
+    text-decoration: none;
 }
 
 

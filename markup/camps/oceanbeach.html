@@ -15,8 +15,8 @@
     ga('send', 'pageview');
 
 </script>
-<div class="classes title">Ocean Beach Skateboarding Camp</div>
-<div class="classes">Robb Field Skate Park <span>2525 Bacon St.</span></div>
+<div class="classes title">Ocean Beach Skateboarding Camps <span id="currentYear"></span></div>
+<div class="classes">Robb Field Skate Park <a class="mapIt" href="https://www.google.com/maps/place/2525+Bacon+St,+San+Diego,+CA+92107/@32.7551228,-117.2421697,17z/data=!3m1!4b1!4m2!3m1!1s0x80deaa40ee2dc45b:0x80ca15774ae7fe4c" target="_blank">2525 Bacon St.</a></div>
 
 <div class="classes">Join the fun this summer at our Ocean Beach Skate Camp. Play skateboarding games, make new friends, meet guest Pros and learn new tricks at the Robb Field Skate Park.</div>
 
@@ -24,3 +24,6 @@
 <div class="classes">Visit <a href="https://apm.activecommunities.com/sdparkandrec/Activity_Search?txtActivitySearch=skateboarding&applyFiltersDefaultValue=true" target="_blank">San Diego Recreation</a> for schedule, price and to sign up!</div>
 <div class="classes">Sign up in person at the Robb Field Recreation Center located at 2525 Bacon St. San Diego, CA 92107</div>
 <div class="classes">*Skateboard rentals are available upon request!</div>
+<script>
+$('#currentYear').text((new Date).getFullYear());
+</script>
