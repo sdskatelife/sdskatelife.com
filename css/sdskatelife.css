@@ -283,7 +283,7 @@ body {
 .classes {
 	text-align: center;
 	margin-bottom: 14px;
- 	font-family: sdskatelife, Cooper Black, Tahoma;
+ 	font-family: Tahoma;
 }
 .classes h2 {
 	color: #3D251D;
@@ -297,6 +297,10 @@ body {
 }
 .classes link:hover {
 	text-decoration: underline;
+}
+.classes.title {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
