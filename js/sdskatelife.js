@@ -25,15 +25,15 @@ function loadclass(w) {
     console.log("SARA loadclass w = ", w);
 //    $("#classescontent").find("div").remove();
     $("#classescontent").load("markup/classes/" + w + ".html");
-    $("#classestitle").load("markup/title/" + w + ".html");
-    $("#classesfeature").load("markup/feature/" + w + ".html");
+    $("#classestitle").load("markup/title/classes/" + w + ".html");
+    $("#classesfeature").load("markup/feature/classes/" + w + ".html");
 }
 
 function loadcamp(w) {
     console.log("SARA loadcamp w = ", w);
     $("#campscontent").load("markup/camps/" + w + ".html");
-    $("#campstitle").load("markup/title/" + w + ".html");
-    $("#campsfeature").load("markup/feature/" + w + ".html");
+    $("#campstitle").load("markup/title/camps/" + w + ".html");
+    $("#campsfeature").load("markup/feature/camps/" + w + ".html");
 }
 
 function loadcontent(w) {

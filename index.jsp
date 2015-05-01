@@ -6,8 +6,8 @@
         <title>SD SkateLife</title>
         <link href="css/sdskatelife.css" rel="stylesheet" type="text/css" />
         <!--<link href="css/sequencejs-theme.modern-slide-in.css" rel="stylesheet" type="text/css" />-->
-<!--        <script src="js/jquery-1.7.1.min.js" type="text/javascript" language="JavaScript"></script>-->
-        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="js/jquery-1.7.1.min.js" type="text/javascript" language="JavaScript"></script>
+        <!--script src="https://code.jquery.com/jquery-1.11.2.min.js"></script-->
         <!--        <script src="js/jquery.sequence-min.js"></script>
                 <script src="js/sequencejs-options.modern-slide-in.js"></script>-->
         <script>
