@@ -308,5 +308,13 @@ a.mapIt {
     text-decoration: none;
 }
 
+div.testimonial {
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #e7dbc0;
+}
+
 
 
