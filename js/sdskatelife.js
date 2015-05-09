@@ -1,4 +1,3 @@
-console.log("SARA inside sdskatelife.js");
 var reload = true;
 jQuery(function($)
 {
@@ -22,7 +21,6 @@ jQuery(function($)
 });
 
 function loadclass(w) {
-    console.log("SARA loadclass w = ", w);
 //    $("#classescontent").find("div").remove();
     $("#classescontent").load("markup/classes/" + w + ".html");
     $("#classestitle").load("markup/title/classes/" + w + ".html");
@@ -30,24 +28,20 @@ function loadclass(w) {
 }
 
 function loadcamp(w) {
-    console.log("SARA loadcamp w = ", w);
     $("#campscontent").load("markup/camps/" + w + ".html");
     $("#campstitle").load("markup/title/camps/" + w + ".html");
     $("#campsfeature").load("markup/feature/camps/" + w + ".html");
 }
 
 function loadcontent(w) {
-    console.log("SARA loadcontent w = ", w);
     var contentdiv = "#" + w + "content";
     $(contentdiv).load('markup/' + w + '.html');
 }
 function loadtitle(w) {
-    console.log("SARA loadtitle w = ", w);
     var titlediv = "#" + w + "title";
     $(titlediv).load('markup/title/' + w + '.html');
 }
 function loadfeature(w) {
-    console.log("SARA loadfeature w = ", w);
     var featurediv = "#" + w + "feature";
     $(featurediv).load('markup/feature/' + w + '.html');
 }

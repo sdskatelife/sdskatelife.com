@@ -279,7 +279,10 @@ body {
     position: relative;
     top: -24px;
 }
-
+.classlink-simple {
+    font-family: Tahoma, Century Gothic;
+    color: #3D251D;
+}
 .classes {
 	text-align: center;
 	margin-bottom: 14px;
@@ -314,6 +317,11 @@ div.testimonial {
     padding: 10px;
     margin-bottom: 20px;
     background-color: #e7dbc0;
+}
+
+.link-icon {
+    vertical-align: middle;
+    margin-right: 12px;
 }
 
 
