@@ -5,6 +5,10 @@ body {
     background-image: url(../images/sdsl/sdslbricks.jpg);
 }
 
+a, a:visited, a:active {
+    color: #5c8727;
+}
+
 @font-face {
     font-family: 'sdskatelife';
     src:url('../fonts/icomoon.eot');
@@ -251,6 +255,35 @@ body {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+.subtitle {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    color: #5c8727;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+div.section-container {
+    margin: 20px auto;
+    border: 1px solid #5c8727;
+    border-radius: 5px;
+}
+
+div.section-title {
+    background-color: #5c8727;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 1.3em;
+}
+div.section-content {
+    padding: 8px;
+}
+
+
 .indented {
     margin-left: 25px;
     text-align: left;
@@ -261,7 +294,7 @@ body {
 .sectiontitle {
     text-align: left;
     font-family: Tahoma;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -324,5 +357,22 @@ div.testimonial {
     margin-right: 12px;
 }
 
+div.divider-line {
+    width: 80%;
+    margin: 30px auto;
+    height: 1px;
+    background-color: beige;
+    border-bottom: 1px solid #5c8727;
+}
 
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #5c8727;
+    border-radius: 5px;
+    margin-right: 11px;
+}
 
+.brand-container a:last-child img {
+    margin: 0;
+}
