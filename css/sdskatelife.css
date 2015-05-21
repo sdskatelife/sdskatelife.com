@@ -373,6 +373,12 @@ div.divider-line {
     margin-right: 11px;
 }
 
+.brand-container {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
 .brand-container a:last-child img {
     margin: 0;
 }
