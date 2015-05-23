@@ -5,6 +5,10 @@ body {
     background-image: url(../images/sdsl/sdslbricks.jpg);
 }
 
+a, a:visited, a:active {
+    color: #5c8727;
+}
+
 @font-face {
     font-family: 'sdskatelife';
     src:url('../fonts/icomoon.eot');
@@ -39,7 +43,6 @@ body {
     text-align: center;
     background-color: white;
     width: 930px;
-    height: 700px;
     top: -280px;
     z-index: 0;
     border-radius: 4px 4px 0 0;
@@ -227,7 +230,8 @@ body {
 }
 #maincontentdiv{
     position: relative;
-    height: 390px;
+    min-height: 390px;
+    max-height: 810px;
     width: 530px;
     top: -70px;
     left: 370px;
@@ -251,6 +255,35 @@ body {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+.subtitle {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    color: #5c8727;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+div.section-container {
+    margin: 20px auto;
+    border: 1px solid #5c8727;
+    border-radius: 5px;
+}
+
+div.section-title {
+    background-color: #5c8727;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 1.3em;
+}
+div.section-content {
+    padding: 8px;
+}
+
+
 .indented {
     margin-left: 25px;
     text-align: left;
@@ -261,7 +294,7 @@ body {
 .sectiontitle {
     text-align: left;
     font-family: Tahoma;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -279,7 +312,10 @@ body {
     position: relative;
     top: -24px;
 }
-
+.classlink-simple {
+    font-family: Tahoma, Century Gothic;
+    color: #3D251D;
+}
 .classes {
 	text-align: center;
 	margin-bottom: 14px;
@@ -308,5 +344,41 @@ a.mapIt {
     text-decoration: none;
 }
 
+div.testimonial {
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ede6d3;
+}
 
+.link-icon {
+    vertical-align: middle;
+    margin-right: 12px;
+}
 
+div.divider-line {
+    width: 80%;
+    margin: 30px auto;
+    height: 1px;
+    background-color: beige;
+    border-bottom: 1px solid #5c8727;
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #5c8727;
+    border-radius: 5px;
+    margin-right: 11px;
+}
+
+.brand-container {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.brand-container a:last-child img {
+    margin: 0;
+}
