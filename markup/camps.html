@@ -17,9 +17,9 @@
 </script>
 <div>
     <div class="hometitle">Skate Camps</div>
-    <div class="contentbody" style="font-weight: bold">REGISTRATION NOW OPEN FOR SUMMER <span id="currentYear"></span> SKATE CAMPS!</div>
+    <div class="contentbody" style="font-weight: bold">REGISTRATION NOW OPEN FOR <span id="currentSeason"></span> <span id="currentYear"></span> SKATE CAMPS!</div>
     <div class="contentbody">SD Skatelife camps are all about having fun! All of our camps include group lessons, individual instruction, skateboarding games and activities, contests, guest professional demo's, and much more!</div>
-    <div class="hometitle" style="font-size: 16px;">Register now to get in on the fun this summer.</div>
+    <div class="hometitle" style="font-size: 16px;">Register now to get in on the fun.</div>
     <div><img src="images/feature/syndromethumb.jpg" /><a href="javascript: loadcamp('syndrome');" class="classlink">Syndrome Skateboarding Camps</a></div>
     <div><img src="images/feature/powaythumb.jpg" /><a href="javascript: loadcamp('poway');" class="classlink">Poway Skateboarding Camps</a></div>
     <!--div><img src="images/feature/oceanbeachthumb.jpg" /><a href="javascript: loadcamp('oceanbeach');" class="classlink">Ocean Beach Skateboarding Camp</a></div-->
@@ -30,5 +30,29 @@
 </div>
 
 <script>
-$('#currentYear').text((new Date).getFullYear());
+    $('#currentYear').text((new Date()).getFullYear());
+    
+    /*
+     * Get the current season.
+     * January - May = spring
+     * June - August = summer
+     * September - November = fall
+     * December = winter
+     */
+    function getSeason(toUpper) {
+        var month = (new Date()).getMonth();
+        var season = 'spring';
+        if (month > 4 && month < 9) {
+            season = 'summer';
+        } else {
+            season = 'fall/winter';
+        }
+        if (toUpper) {
+            season = season.toUpperCase();
+        }
+        return season;
+    }
+    $('#currentSeason').text(getSeason(true));
+    
+    
 </script>
