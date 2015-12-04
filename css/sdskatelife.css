@@ -382,3 +382,8 @@ div.divider-line {
 .brand-container a:last-child img {
     margin: 0;
 }
+
+.info-message {
+    font-weight: bold;
+    color: #5c8727;
+}
