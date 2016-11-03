@@ -17,34 +17,36 @@
 </script>
 <div>
     <div class="hometitle">Skate Camps</div>
-    <div class="contentbody" style="font-weight: bold">REGISTRATION NOW OPEN FOR <span id="currentSeason"></span> <span id="currentYear"></span> SKATE CAMPS!</div>
-    <div class="contentbody">SD Skatelife camps are all about having fun! All of our camps include group lessons, individual instruction, skateboarding games and activities, contests, guest professional demo's, and much more!</div>
+    <div class="contentbody" style="font-weight: bold">REGISTRATION OPEN FOR <span class="currentSeason"></span> <span id="currentYear"></span> SKATE CAMPS!</div>
+    <div class="contentbody">We are excited to announce a TON of new <span class="currentSeason"></span> camps!</div>
+    <div class="contentbody">SD Skatelife camps are all about having fun! All of our San Diego skate camps include group lessons, individual instruction, skateboarding games and activities, contests, guest professional demo's, and much more!</div>
     <div class="hometitle" style="font-size: 16px;">Register now to get in on the fun.</div>
-    <div><img src="images/feature/syndromethumb.jpg" /><a href="javascript: loadcamp('syndrome');" class="classlink">Syndrome Skateboarding Camps</a></div>
-    <div><img src="images/feature/powaythumb.jpg" /><a href="javascript: loadcamp('poway');" class="classlink">Poway Skateboarding Camps</a></div>
+    <!--div><img src="images/feature/syndromethumb.jpg" /><a href="javascript: loadcamp('syndrome');" class="classlink">Syndrome Skateboarding Camps</a></div-->
+    <div><img src="images/feature/kingofroadthumb.png" /><a href="javascript: loadcamp('kingofroad');" class="classlink">King of the Road Travel Camp</a></div>
+    <div><img src="images/feature/encinitasthumb.jpg" /><a href="javascript: loadcamp('encinitas');" class="classlink"><span class="standOut"></span>Encinitas Skate Camp</a></div>
+    <div><img src="images/feature/powaythumb.jpg" /><a href="javascript: loadcamp('poway');" class="classlink">Poway Skate Camp</a></div>
     <!--div><img src="images/feature/oceanbeachthumb.jpg" /><a href="javascript: loadcamp('oceanbeach');" class="classlink">Ocean Beach Skateboarding Camp</a></div-->
-    <div><img src="images/feature/carmelvalleythumb.jpg" /><a href="javascript: loadcamp('carmelvalley');" class="classlink">Carmel Valley Skateboarding Camp</a></div>
-    <div><img src="images/feature/oceansidethumb.jpg" /><a href="javascript: loadcamp('oceanside');" class="classlink">Oceanside Skateboarding Camp</a></div>
-    <div><img src="images/feature/ranchopenasquitosthumb.jpg" /><a href="javascript: loadcamp('ranchopenasquitos');" class="classlink">Rancho Penasquitos Skateboarding Camp</a></div>
-    <div><img src="images/feature/chulavistathumb.jpg" /><a href="javascript: loadcamp('chulavista');" class="classlink">Chula Vista Skateboarding Camp</a></div>
+    <div><img src="images/feature/carmelvalleythumb.jpg" /><a href="javascript: loadcamp('carmelvalley');" class="classlink">Carmel Valley Skate Camp</a></div>
+    <div><img src="images/feature/oceansidethumb.jpg" /><a href="javascript: loadcamp('oceanside');" class="classlink">Oceanside Skate Camp</a></div>
+    <div><img src="images/feature/ranchopenasquitosthumb.jpg" /><a href="javascript: loadcamp('ranchopenasquitos');" class="classlink">Rancho Penasquitos Skate Camp</a></div>
+    <div><img src="images/feature/chulavistathumb.jpg" /><a href="javascript: loadcamp('chulavista');" class="classlink">Chula Vista Skate Camp</a></div>
 </div>
 
 <script>
     $('#currentYear').text((new Date()).getFullYear());
-    
     /*
      * Get the current season.
-     * January - May = spring
-     * June - August = summer
+     * January - April = spring
+     * May - August = summer
      * September - November = fall
      * December = winter
      */
     function getSeason(toUpper) {
         var month = (new Date()).getMonth();
         var season = 'spring';
-        if (month > 4 && month < 9) {
+        if (month > 2 && month < 9) {
             season = 'summer';
-        } else {
+        } else if (month >= 9) {
             season = 'fall/winter';
         }
         if (toUpper) {
@@ -52,7 +54,7 @@
         }
         return season;
     }
-    $('#currentSeason').text(getSeason(true));
+    $('.currentSeason').text(getSeason(true));
     
     
 </script>

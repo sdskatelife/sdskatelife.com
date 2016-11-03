@@ -3,7 +3,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>SD SkateLife</title>
+        <title>SD SkateLife - Skate Camps and Lessons in San Diego</title>
+        <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+        <link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
         <link href="css/sdskatelife.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" >
         <!--link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -42,6 +44,7 @@
                         <div id="campstitle" class="titletextdiv" style="display: none;"></div>
                         <div id="classestitle" class="titletextdiv" style="display: none;"></div>
                         <div id="eventstitle" class="titletextdiv" style="display: none;"></div>
+                        <div id="surftitle" class="titletextdiv" style="display: none;"></div>
                     </div>
                 </div>
                 <div id="topslidebox">
@@ -56,14 +59,16 @@
                     <div id="campsfeature" class="viewerimage" style="display: none;"></div>
                     <div id="classesfeature" class="viewerimage" style="display: none;"></div>
                     <div id="eventsfeature" class="viewerimage" style="display: none;"></div>
+                    <div id="surffeature" class="viewerimage" style="display: none;"></div>
                 </div>
             </div>
             <div id="whitebox">
                 <div id="leftnav">
-                    <div id="safetybtn" class="lnavbtn" onclick="javascript: goto('safetybtn');">Skate Safety</div>
+                    <div id="campsbtn" class="lnavbtn" onclick="javascript: goto('campsbtn');">Skate Camps</div>
+                    <div id="classesbtn" class="lnavbtn" onclick="javascript: goto('classesbtn');">Skate Classes</div>
+                    <div id="surfbtn" class="lnavbtn" onclick="javascript: goto('surfbtn');">Surf Camps</div>
                     <div id="lessonsbtn" class="lnavbtn" onclick="javascript: goto('lessonsbtn');">Private Lessons</div>
-                    <div id="campsbtn" class="lnavbtn" onclick="javascript: goto('campsbtn');">Camps</div>
-                    <div id="classesbtn" class="lnavbtn" onclick="javascript: goto('classesbtn');">Classes</div>
+                    <div id="safetybtn" class="lnavbtn" onclick="javascript: goto('safetybtn');">Skate Safety</div>
                     <div id="eventsbtn" class="lnavbtn" onclick="javascript: goto('eventsbtn');">Forms</div>
                 </div>
                 <div id="maincontentdiv">
@@ -78,16 +83,18 @@
                     <div id="campscontent" style="display: none;"></div>
                     <div id="classescontent" style="display: none;"></div>
                     <div id="eventscontent" style="display: none;"></div>
+                    <div id="surfcontent" style="display: none;"></div>
                 </div>
             </div>
             <div id="footerbox">
+                <div class="tagline">San Diego's Premier Skate Camps and Skate Lessons!</div>
                 <div id="footerlogo"></div>
                 <div id="footerinfo">
                     <div style="font-size: 1.2em; text-align: left;">Contact Information</div>
                     <div style="font-size: 1.1em; font-weight: normal; text-align: left; margin-left: 30px; margin-top: 20px;">619-354-7998</div>
                     <div style="margin-left: 30px; font-weight: normal;">
                         <div style="float: left; font-size: .9em;">andrew@sdskatelife.com</div>
-                        <div style="float: left; font-size: .9em; margin-left: 100px;">&copy; 2013-<span id="currentYear"></span> SD Skate Life</div>
+                        <div class="copyright">&copy; 2013-<span id="currentYear"></span> SD Skate Life</div>
                         <div style="clear: both;"></div>
                     </div>
                 </div>

@@ -65,6 +65,7 @@ function goto(w)
     $("#leftnav").find("div").siblings().removeClass("lnavactivebtn");
     $("#topnav").find("#" + w).addClass("navactivebtn");
     $("#leftnav").find("#" + w).addClass("lnavactivebtn");
+    debugger;
     var wd = w.substring(0, w.indexOf("btn"));
     setDiv(wd);
 }
@@ -113,7 +114,10 @@ jQuery(function($) {
             .bind('beforeShow', function() {
         loadcontent('events');
     });
-
+    $('#surfcontent')
+            .bind('beforeShow', function() {
+        loadcontent('surf');
+    });
     $('#homefeature')
             .bind('beforeShow', function() {
         loadfeature('home');
@@ -157,6 +161,10 @@ jQuery(function($) {
     $('#eventsfeature')
             .bind('beforeShow', function() {
         loadfeature('events');
+    });
+    $('#surffeature')
+            .bind('beforeShow', function() {
+        loadfeature('surf');
     });
 
     $('#hometitle')
@@ -202,6 +210,10 @@ jQuery(function($) {
     $('#eventstitle')
             .bind('beforeShow', function() {
         loadtitle('events');
+    });
+    $('#surftitle')
+            .bind('beforeShow', function() {
+        loadtitle('surf');
     });
 });
 
